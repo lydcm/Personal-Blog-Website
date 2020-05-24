@@ -1,0 +1,27 @@
+/*--------- CSS STYLES FOR NAVIGATION BAR ---------*/
+
+.navbar-wrapper {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #abf0e9;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #342ead;
+}
+
+

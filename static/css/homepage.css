@@ -1,0 +1,85 @@
+/*--------- CSS STYLES FOR THE HOME PAGE ---------*/
+
+@import "core.css";
+@import "navbar.css";
+@import "footer.css";
+
+.wrapper {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+}
+
+/*--------- NEWS ARTICLE / GRID COLUMNS ---------*/
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+.news-article {
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    min-width: 0;
+}
+
+.news-article h3 {
+    margin-bottom: 0.5em;
+}
+
+.news-article figure img {
+    border-radius: 0.8em;
+    max-width: 100%;
+    transform: scale(0.75);
+}
+
+.news-article p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.news-article a {
+    text-decoration: none;
+    font-style: italic;
+    color: #035aa6;
+}
+
+/*--------- MEDIA QUERIES ---------*/
+
+@media (min-width: 451px) and (max-width:1200px) {
+    .article-container {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+  }
+
+@media (min-width: 1201px) {
+    .article-container {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    html, body {
+        font-size: 20px;
+    }
+  }
+

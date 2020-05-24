@@ -1,0 +1,83 @@
+/*--------- CSS STYLES FOR THE BLOG-POST PAGE ---------*/
+
+@import "core.css";
+@import "navbar.css";
+@import "footer.css";
+
+/*--------- MEDIA QUERIES ---------*/
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 12px;
+    }
+  }
+
+@media only screen and (min-width: 901px) {
+    body {
+        font-size: 14px;
+    }  
+  }
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }     
+  }
+
+/*--------- ARTICLE SECTION ---------*/
+#content-wrapper {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#article-title {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.article-info {
+    text-align: center;
+    color: #6886c5;
+}
+
+#musician-pic {
+    display: block;
+    margin: 3em auto 2em auto;
+    max-width: 50%;
+    height: auto;
+}
+
+p {
+    margin: 1em 1.5em;
+    padding: 0.5em;
+}
+
+blockquote {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/*--------- SHARE BUTTONS ---------*/
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: 1.5em;
+    color: blue;
+    text-align: center;
+}
+
+#share-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+    list-style-type: none;    
+}
+
+#share-buttons li a img {
+    max-width: 4em;
+    margin-right: 0.8em;
+    border: 0;
+    box-shadow: 0;
+}

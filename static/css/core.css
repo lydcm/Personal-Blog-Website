@@ -1,0 +1,46 @@
+/*--------- ALL BASIC STYLES FOR ALL PAGES ---------*/
+html, body {
+    font-size: 14px;
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Blog Name Style */
+
+#blog-name {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    color: #ee8572;
+}
+
+/* Subscribe Button & Sign-In Button */
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#subscribe-button, #sign-in-button{
+    background-color: #ee8572;
+    color: #342ead;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-weight: bold;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* All Figure Caption Fonts */
+.fig-caps {
+    text-align: center;
+    color: #ff5200;
+    font-size: 0.7em;
+    margin-bottom: 0.3em;
+}
